@@ -1,0 +1,192 @@
+
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+
+
+
+<body>
+
+<style>
+.dropbtn {
+  background-color: #00cccc;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #00cccc;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.
+</style>
+
+
+
+
+<div class="container">
+<nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <h1>  <img src="https://www.apcc.ap.gov.in/assets/images/ap-new-logo.png" alt="no image found">
+       
+        STUDENT GRIEVANCE PORTAL</h1>
+<marquee width="100%" direction="right" height="100px">
+<h3>Government of Andhra Pradesh.</h3>
+</marquee>
+      </a>
+    </nav>
+	
+	
+	
+<form action="token.html">	
+<div class="jumbotron">
+
+<div class="form-group">
+  <label for="sel1"><h3>Select College:</h3></label>
+  <select class="form-control" id="sel1">
+    <option>Yogi Vemana University, Kadapa</option>
+    <option>Jawaharlal Nehru Technological University (JNTU), Hyderabad</option>
+    <option>Dravidian University, Kuppam</option>
+    <option>Mahatma Gandhi University, Nalgonda</option>
+    <option>Palamuru University, Palamuru</option>
+    <option>Potti Sriramulu Telugu University</option>
+    <option>International Institute of Information Technology, Hyderabad</option>
+    <option>NALSAR Law University, Hyderabad
+    <option>English and Foreign Languages University - Hyderabad</option>
+    <option>Acharya N G Ranga Agricultural University, Hyderabad</option>
+    <option>Chaitanya Bharathi Institute of Technology, Hyderabad</option>
+    <option>Nizam's Institute of Medical Sciences, Hyderabad</option>
+    <option>Adikavi Nannaya University, Rajahmundry</option>
+    <option>Telangana University, Nizamabad</option>
+    <option>Jawaharlal Nehru Technological University, Kakinada</option>
+    <option>Dr. B.R. Ambedkar Open University, Srikakula</option>
+    <option>Sri Venkateswara Veterinary University, Tirupati</option>
+    <option>Satavahana University, Karim Nagar</option>
+    <option>Andhra University, Visakhapatnam</option>
+    <option>Jawaharlal Nehru Technological University, Anantapur</option>
+    <option>Rayalaseema University, Kurnool</option>
+    <option>Andhra Pradesh University of Law, Visakhapatnam</option>
+    <option>Sri Padmavati Mahila Visvavidyalayam Women's University, Tirupati</option>
+    <option>Sri Venkateswara University (SVU), Tirupati</option>
+    <option>Krishna University, Hyderabad</option>
+    <option>Vignan University, Hyderabad</option>
+    <option>Vikrama Simhapuri University, Sri Potti Sriramulu Dist</option>
+    <option>Jawaharlal Nehru Architecture and Fine Arts University, Hyderabad</option>
+    <option>Sri Venkateswara Vedic University, Tirupati</option>
+    <option>Dr. NTR University of Health Sciences (NTRUHS), Vijayawada</option>
+
+  </select>
+</div>
+
+<br>
+
+<div class="form-group">
+  <label for="sel1"><h3>Select Degree:</h3></label>
+  <select class="form-control" id="sel1">
+    <option>B.Tech</option>
+    <option>MBA</option>
+    <option>M.Tech</option>
+    <option>B.SC</option>
+	<option>MBBS</option>
+	
+  </select>
+</div>
+
+<br>
+
+<div class="form-group">
+  <label for="sel1"><h3>Problem Type:</h3></label>
+  <select class="form-control" id="sel1">
+    <option>Financial</option>
+    <option>Ragging</option>
+    <option>Accomodation</option>
+    <option>Transportation</option>
+	<option>Faculty</option>
+  </select>
+</div>
+
+
+<br>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1"><h3>Type Your Problem Statement:</h3></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+<button type="submit" class="btn btn-dark">Submit</button>
+	</div>
+	</div>
+	</form>
+	
+	
+	<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
